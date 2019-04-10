@@ -22,6 +22,11 @@ export default new Router({
       component: () => import("./views/1.2")
     },
     {
+      path: "/1.2a",
+      name: "课后题：双向绑定和单向数据流不冲突",
+      component: () => import("./views/1.2_a")
+    },
+    {
       path: "/1.3",
       name: "虚拟Dom",
       component: () => import("./views/1.3")

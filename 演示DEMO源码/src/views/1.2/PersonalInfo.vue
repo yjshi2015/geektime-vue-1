@@ -41,6 +41,7 @@ export default {
       });
     },
     handlePhoneChange(e) {
+      console.log("e是什么鬼?"+e.target.value);
       this.$emit("change", {
         ...this.phoneInfo,
         phone: e.target.value

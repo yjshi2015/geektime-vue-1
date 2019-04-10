@@ -1,7 +1,6 @@
 <template>
   <div class="border2">
     <h3>F 结点</h3>
-    <slot></slot>
   </div>
 </template>
 <script>

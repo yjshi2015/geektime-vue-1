@@ -3,7 +3,7 @@
     <PersonalInfo
       v-model="phoneInfo"
       required
-      :validate="validate"
+      :validate="validatesyj"
       message="手机号为空或不合法"
       :zip-code.sync="zipCode"
     />
@@ -29,7 +29,7 @@ export default {
     };
   },
   methods: {
-    validate(phone = "") {
+    validatesyj(phone = "") {
       return phone && /^1[0-9]{10}$/.test(phone);
     }
   }

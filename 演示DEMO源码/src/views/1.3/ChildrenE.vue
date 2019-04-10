@@ -3,7 +3,7 @@
     <h3>
       E 结点
     </h3>
-    <slot></slot>
+
   </div>
 </template>
 <script>
