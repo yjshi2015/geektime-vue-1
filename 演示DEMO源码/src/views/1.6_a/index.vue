@@ -12,8 +12,8 @@ export default {
   },
   data() {
     return {
-      startTime: moment("2019-03-08 14:05:00"),
-      endTime: moment("2019-03-08 14:20:00")
+      startTime: moment("2019-04-14 08:00:00"),
+      endTime: moment("2019-04-14 14:20:00")
     };
   }
 };

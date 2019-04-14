@@ -15,6 +15,7 @@
         >
           <template v-slot="{ var1, var2 }">
             {{ var1 }}
+            <br/>
             {{ var2 }}
           </template>
         </TempVar>
@@ -35,7 +36,7 @@ export default {
   data() {
     return {
       destroyClock: false,
-      name: "vue"
+      name: "syj"
     };
   }
 };

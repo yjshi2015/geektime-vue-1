@@ -36,17 +36,17 @@ export default {
     this.startClock();
   },
   beforeUpdate() {
-    console.log("beforeUpdate");
+    console.log("syj==============beforeUpdate");
   },
   updated() {
-    console.log("updated");
+    console.log("syj==============updated");
   },
   beforeDestroy() {
-    console.log("beforeDestroy");
+    console.log("syj--------------beforeDestroy");
     clearInterval(this.clockInterval);
   },
   destroyed() {
-    console.log("destroyed");
+    console.log("syj--------------destroyed");
   },
   methods: {
     startClock() {

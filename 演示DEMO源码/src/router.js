@@ -47,6 +47,11 @@ export default new Router({
       component: () => import("./views/1.6")
     },
     {
+      path: "/1.6a",
+      name: "生命周期的应用场景和函数式组件--秒杀",
+      component: () => import("./views/1.6_a")
+    },
+    {
       path: "/1.7",
       name: "指令的本质",
       component: () => import("./views/1.7")
