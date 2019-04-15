@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>router demo</h2>
+    <h2>router demo 头部信息，以下内容为随路由变化内容：</h2>
     <router-view></router-view>
   </div>
 </template>

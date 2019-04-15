@@ -11,6 +11,8 @@ npm run serve
 ```
 
 # 学习记录
+- js为单线程执行，所以针对异步请求，哪个先到先处理哪个，不存在“同时”
+
 - vue3大核心组件：属性 事件 插槽
 
 - 计算属性computed和监听属性watch:
@@ -29,3 +31,14 @@ npm run serve
 - vue路由，类似于javaweb的controller
 
 - vue内置命令： v-show、v-if、v-for……
+
+- router路由相关：
+    - router的存在，使页面的模式变成了SPA(单页面)模式，避免了随着url的变化，页面重新加载的问题
+    - router模式：
+    - 1.Hash模式，在url中存在#符号，丑
+    - 2.history模式，在url中避免了#符号，推荐
+    - 使用方式：
+    - 1.提供一个路由配置表，比如toutes.js，不同的burl对应不同组件的配置
+    - 2.初始化路由实例 new VueRouter()
+    - 3.挂载到Vue实例上
+    - 4.提供一个路由占位符<router-view>，用来挂载URL匹配到的组件
