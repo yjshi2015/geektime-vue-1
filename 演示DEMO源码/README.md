@@ -42,3 +42,9 @@ npm run serve
     - 2.初始化路由实例 new VueRouter()
     - 3.挂载到Vue实例上
     - 4.提供一个路由占位符<router-view>，用来挂载URL匹配到的组件
+    
+- 提高效率的插件
+    - vetur 快速生成vue页面，补充标签
+    - ESlint 代码规范
+    - prettier 格式化
+    - vue-devtools 浏览器插件
