@@ -7,6 +7,7 @@
           :type="type"
           :is-visible="false"
           :on-change="handlePropChange"
+          :info="PInfo"
           title="属性Demo"
           class="test1"
           :class="['test2']"
@@ -67,7 +68,11 @@ export default {
     return {
       name: "",
       type: "success",
-      bigPropsName: "Hello world!"
+      bigPropsName: "Hello world!",
+      PInfo: {
+        id: 11,
+        name: "张三那"
+      }
     };
   },
   methods: {
