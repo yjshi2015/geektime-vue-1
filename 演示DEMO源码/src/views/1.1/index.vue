@@ -8,6 +8,7 @@
           :is-visible="false"
           :on-change="handlePropChange"
           :info="PInfo"
+          :list="PList"
           title="属性Demo"
           class="test1"
           :class="['test2']"
@@ -72,7 +73,8 @@ export default {
       PInfo: {
         id: 11,
         name: "张三那"
-      }
+      },
+      PList: [1, 2, 3]
     };
   },
   methods: {

@@ -43,6 +43,7 @@ export default {
   },
   beforeDestroy() {
     console.log("syj--------------beforeDestroy");
+    //销毁的时候要把计时器clear掉，否则会导致内存泄漏
     clearInterval(this.clockInterval);
   },
   destroyed() {

@@ -16,8 +16,8 @@ export default {
     PropsAndData
   },
   data() {
-    this.name = name;
     return {
+      name: name,
       info: {},
       // info: {
       //   number: undefined
