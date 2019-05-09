@@ -3,7 +3,7 @@
     <a-tabs>
       <a-tab-pane key="props" tab="属性">
         <Props
-          name="Hello Vue！"
+          :name="name"
           :type="type"
           :is-visible="false"
           :on-change="handlePropChange"
@@ -67,7 +67,7 @@ export default {
   },
   data: () => {
     return {
-      name: "",
+      name: "sm鬼",
       type: "success",
       bigPropsName: "Hello world!",
       PInfo: {

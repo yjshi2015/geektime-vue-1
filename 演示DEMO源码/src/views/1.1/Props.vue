@@ -24,7 +24,10 @@ export default {
   // inheritAttrs: false,
   // props: ['name', 'type', 'list', 'isVisible'],
   props: {
-    name: String,
+    name: {
+      type: String,
+      default: ""
+    },
     type: {
       validator: function(value) {
         // 这个值必须匹配下列字符串中的一个
@@ -60,19 +63,20 @@ export default {
   },
   watch: {
     info: {
-      handler: {
-        function() {
-          console.log(this.info.id + " " + this.info.name);
-        }
+      handler(val) {
+          console.log("info=============");
       },
       immediate: true,
       deep: true
     },
-    myInfo: function() {
-       console.log(this.myInfo.id + " ==========");
+    myInfo: {
+      handler(val) {
+        console.log(this.myInfo.id + " ==========");
+      },
+      deep: true
     },
-    name: function(oldVal, newVal)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {
-      console.log("name new: %s, old: %s ===============", oldVal, newVal);
+    name(val) {
+      console.log("name new: name ===============");
       this.myName = this.name;
     }
   },
@@ -85,7 +89,7 @@ export default {
       // 可以，还可以更好
       this.onChange(this.type === "success" ? "warning" : "success");
       this.myInfo.id = "22" + Date.now();
-                                                                                                                                                                                                                                                                                                                              this.myInfo.name = "lisi" + Date.now();
+      this.myInfo.name = "lisi" + Date.now();
     }
   }
 };
