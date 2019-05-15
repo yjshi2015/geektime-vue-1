@@ -64,7 +64,7 @@ export default {
   watch: {
     info: {
       handler(val) {
-          console.log("info=============");
+        console.log("info=============");
       },
       immediate: true,
       deep: true

@@ -61,3 +61,11 @@ npm run serve
     - ESlint 代码规范
     - prettier 格式化
     - vue-devtools 浏览器插件
+
+- css样式（https://www.runoob.com/css）
+    - 可以指定特定的HTML元素使用class。如下的样式会让所有的 p 元素使用 class="center" 让该元素的文本居中
+      > p.center {text-align:center;}
+
+    - 样式的优先级如下：
+    (内联样式）Inline style \> （内部样式）Internal style sheet \>（外部样式）External style sheet \> 浏览器默认样式
+    - 如果属性的样式在多个地方被定义，则最终也是按照如上优先级进行继承：相同的属性会被优先级高的覆盖，不同的属性则可以继承下来
