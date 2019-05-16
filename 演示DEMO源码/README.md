@@ -69,3 +69,10 @@ npm run serve
     - 样式的优先级如下：
     (内联样式）Inline style \> （内部样式）Internal style sheet \>（外部样式）External style sheet \> 浏览器默认样式
     - 如果属性的样式在多个地方被定义，则最终也是按照如上优先级进行继承：相同的属性会被优先级高的覆盖，不同的属性则可以继承下来
+
+    - css的盒子模型，由内向外 content(内容) \> padding(内边距) \> border(边框) \> margin(外边距)
+    > 注意: "border-width" 属性 如果单独使用则不起作用。要先使用 "border-style" 属性来设置边框。
+      边框设置的顺序，以border-style:dotted solid double dashed为例，即是上/右/下/左
+
+    - 分组选择器：即把不同元素分成一组，用同一套样式，类似于 p1,p2,h {样式}
+      嵌套选择器：即元素和class混合使用，类似于 .wrapperML input {样式}
