@@ -74,5 +74,27 @@ npm run serve
     > 注意: "border-width" 属性 如果单独使用则不起作用。要先使用 "border-style" 属性来设置边框。
       边框设置的顺序，以border-style:dotted solid double dashed为例，即是上/右/下/左
 
-    - 分组选择器：即把不同元素分成一组，用同一套样式，类似于 p1,p2,h {样式}
-      嵌套选择器：即元素和class混合使用，类似于 .wrapperML input {样式}
+    - 分组选择器：(有逗号分割)，即把不同元素分成一组，用同一套样式，类似于 p1,p2,h {样式}
+      嵌套选择器：(无逗号分割)，即元素和class混合使用，类似于 .wrapperML input {样式}，
+      或者.topmenu li a {样式}
+
+    - 块级元素(block)特性：
+      + 总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;
+      + 宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;
+    - 内联元素(inline)特性：
+      + 和相邻的内联元素在同一行;
+      + 宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变，就是里面文字或图片的大小;
+    - 块级元素主要有：
+      + address , blockquote , center , dir , div , dl , fieldset , form , h1 , h2 , h3 , h4 , h5 , h6 , hr , isindex , menu , noframes , noscript , ol , p , pre , table , ul , li
+    - 内联元素主要有：
+      + a , abbr , acronym , b , bdo , big , br , cite , code , dfn , em , font , i , img , input , kbd , label , q , s , samp , select , small , span , strike , strong , sub , sup ,textarea , tt , u , var  
+
+    - 元素的定位Position
+      + relative 相对定位，是相对其默认的正常位置
+      + fixed 定位，相对于浏览器窗口是固定位置，即使窗口滚动，它也不会移动
+      + absolute 定位，绝对定位的元素的位置相对于最近的已定位父元素，如果没有已定位的父元素，那么是相对于<\html>，
+      + sticky 定位，粘贴定位，即滚动到一定位置后位置就不再变化
+      + z-index 重叠样式，类似于PS中图层的概念
+      + overflow 滚动条，溢出后自动出现滚动条
+
+    - 元素的浮动，float，类似于word的图片嵌入到文本中的效果
